@@ -14,3 +14,37 @@ body
 
 a
   text-decoration: none
+
+.main-title
+  text-align: center
+  &__topic
+    margin-bottom: 16px
+    font-size: 28px
+    font-weight: 800
+    color: $light-green
+    text-transform: uppercase
+  &__heart
+    display: block
+    margin: 0 auto
+    width: 17px
+    height: 16px
+    position: relative
+    i::before
+      position: absolute
+      top: 0
+      left: 0
+      font-size: 19px
+    &--grey
+      color: #dce1e5
+      &::before, &::after
+        content: ''
+        position: absolute
+        top: 10px
+        width: 90px
+        height: 1px
+        background: #dce1e5
+      &::before
+        left: -105px
+      &::after
+        right: -105px
+
