@@ -1,0 +1,59 @@
+.work
+  text-align: center
+  padding: 61px 0 0 0
+  &__descr
+    width: 50%
+    margin: 0 auto
+    padding: 31px 0 34px 0
+    font-size: 18px
+    line-height: 24px
+  &__list
+    padding: 0 0 24px 0
+  &__categories
+    list-style: none
+  &__category
+    display: inline-block
+    margin-right: 15px
+    a
+      display: inline-block
+      padding: 7px 19px 7px 18px
+      border-radius: 5px
+      font-weight: 700
+      color: $blue
+      text-transform: capitalize
+      &:hover
+        background: $light-green
+        color: $white
+  &__gallery
+    +clearfix
+  &__wrap-pic
+    width: 25%
+    float: left
+    padding: 7.88% 0
+    background: red
+    position: relative
+    overflow: hidden
+  &__gallery-pic
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+  &__gallery-pic-link
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    padding: 26.5% 0 0 0
+    font-size: 18px
+    font-weight: 700
+    color: transparent
+    &:hover
+      background: rgba(14, 180, 147, 0.9)
+      color: $white
+    span
+      display: block
+      font-size: 14px
+      font-weight: 400
+      padding: 5px 0 0 0
