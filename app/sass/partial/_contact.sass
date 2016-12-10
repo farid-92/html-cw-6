@@ -1,0 +1,49 @@
+.contact
+  padding: 3.2% 0 2.55% 0
+  color: $blue
+  &__descr
+    padding: 13px 0 0 0
+    text-align: center
+    font-size: 18px
+    font-weight: 600
+    line-height: 24px
+  &__form
+    text-align: right
+    margin: 0 auto
+    padding: 14px 17% 0
+    +md
+      padding: 14px 10% 0
+  &__row
+    +clearfix
+    margin: 0 0 35px 0
+  &__input, &__textarea
+    width: 48%
+    float: left
+    padding: 7px 0 16px 0
+    border: none
+    border-bottom: 1px solid #ccc
+    +phone
+      width: 100%
+  input[type="email"].contact__input
+     float: right
+  &__textarea
+      width: 100%
+      resize: none
+  &__submit-btn
+    font-size: 16px
+    text-align: right
+    border: none
+    background: transparent
+    position: relative
+    padding: 0 0 0 35px
+    &::before
+      position: absolute
+      top: 0
+      left: 0
+      font-size: 21px
+      color: $light-green
+
+  &__form-title
+    text-align: left
+    font-size: 24px
+    font-weight: 700
