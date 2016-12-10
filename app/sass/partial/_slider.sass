@@ -1,0 +1,66 @@
+.slider
+  color: $white
+  text-align: center
+  &__slide
+    padding: 2.08% 0 2.3% 0
+    position: relative
+  &__image
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: auto
+    z-index: -100
+    +md
+      height: 100%
+  &__title
+    font-size: 62px
+    font-weight: 700
+    margin: 0
+    +tablet
+      font-size: 48px
+  &__subtitle
+    font-size: 48px
+    font-weight: 300
+    line-height: 48px
+    margin: 0
+    padding: 0 0 1.25% 0
+    +tablet
+      font-size: 36px
+  &__under-subtitle
+    padding: 0 59px
+    font-size: 18px
+    font-weight: 300
+    position: relative
+    &::before, &::after
+      content: ''
+      width: 28px
+      height: 1px
+      position: absolute
+      top: 13px
+      background: #0feb9e
+    &::before
+      left: 0
+    &::after
+      right: 0
+  .slick-dots
+    position: absolute
+    bottom: 10.7%
+    width: 100px
+    left: 50%
+    margin: 0 0 0 -50px
+    padding: 0
+    li
+      margin: 0 14px 0 0
+      display: inline-block
+      button
+        padding: 0
+        font-size: 0
+        border: none
+        width: 8px
+        height: 8px
+        background: url("../img/dots.png") -10px 0 no-repeat
+        outline: none
+      &.slick-active
+        button
+          background-position: 0 0
