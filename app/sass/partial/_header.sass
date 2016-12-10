@@ -1,0 +1,84 @@
+.header
+  background: $green
+  .container
+    +clearfix
+  &__logo
+    float: left
+  &__title
+    padding: 21px 0 13px 0
+    a
+      @extend %ff_Pacifico
+      color: $white
+      font-size: 28px
+  &__menu
+    float: right
+    padding: 19px 0 0 0
+    +phone
+      display: none
+      position: absolute
+      top: 60px
+      right: 15px
+      background: rgba(99,198,174,0.8)
+      z-index: 1000
+      +phone
+        padding: 0
+  &__list
+    list-style: none
+    +phone
+      padding: 0
+  &__list-item
+    display: inline-block
+    padding: 0 12px 0 15px
+    letter-spacing: 1px
+    &:last-child
+      padding-right: 0
+    a
+      color: $white
+      &:hover
+        text-decoration: underline
+      +phone
+        display: block
+        padding: 10px 20px
+    +phone
+      padding: 0
+      display: block
+  &__menu-btn
+    display: none
+    +phone
+      display: block
+      width: 45px
+      height: 45px
+      position: absolute
+      background: rgba(99,198,174,0.8)
+      top: 15px
+      right: 15px
+      cursor: pointer
+      & span
+        display: block
+        width: 18px
+        height: 2px
+        background: #fff
+        position: absolute
+        top: 50%
+        left: 50%
+        margin: -1px 0 0 -9px
+      & span::before, & span::after
+        content: ''
+        display: block
+        width: 18px
+        height: 2px
+        background: #fff
+        position: absolute
+        left: 0
+      & span::before
+        top: -6px
+      & span::after
+        top: 6px
+      &.is-active span
+        background: transparent
+      &.is-active span::before
+        transform: rotate(45deg)
+        top: 0
+      &.is-active span::after
+        transform: rotate(-45deg)
+        top: 0
